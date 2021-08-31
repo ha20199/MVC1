@@ -7,19 +7,21 @@ using MVC1.Models;
 
 namespace MVC1.Controllers
 {
-    public class GiaiPhuongTrinhController : Controller
+    public class GPTB1Controller : Controller
     {
-        GiaiPTB1 gpt = new GiaiPTB1();
-        // GET: BaiTapGPTB1
-
+        // GET: GPTB1
         public ActionResult Index()
         {
             return View();
         }
+        GiaiPtb1 gpt = new GiaiPtb1();
+        // GET: BaiTapGPTB1
+
+       
         [HttpPost]
         public ActionResult GiaiPTB1(double HeSoA, double HeSoB)
         {
-            double x = gpt.GPTB1(HeSoA, HeSoB);
+            double x = gpt.GiaiPTB1(HeSoA, HeSoB);
             ViewBag.NghiemPhuongTrinh = x;
             return View();
         }
@@ -27,5 +29,6 @@ namespace MVC1.Controllers
         {
             return View();
         }
+
     }
 }

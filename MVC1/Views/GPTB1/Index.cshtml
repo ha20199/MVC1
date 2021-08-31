@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("GiaiPTB1", "GPTB1"))
+{
+    <input type="text" name="HeSoA" />
+    <input type="text" name="HeSoB" />
+    <button type="submit">Giải Phương Trình</button>
+}
+<h3>
+    Nghiệm Phương Trình là :@ViewBag.NghiemPhuongTrinh
+</h3>
+

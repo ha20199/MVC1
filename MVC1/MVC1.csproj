@@ -120,12 +120,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\GiaiPhuongTrinhController.cs" />
+    <Compile Include="Controllers\GPTB1Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\GiaiPhuongTrinhBac1.cs" />
+    <Compile Include="Models\GiaiPtb1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +167,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\GiaiPhuongTrinh\Index.cshtml" />
     <Content Include="Views\GiaiPhuongTrinh\GiaiPTB1.cshtml" />
+    <Content Include="Views\GPTB1\GiaiPTB1.cshtml" />
+    <Content Include="Views\GPTB1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
